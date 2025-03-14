@@ -19,8 +19,23 @@ body {
   width: 350px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
 }
-
+.patinhos
+{
+    position: absolute;
+    left: 50%; transform: translateX(-50%);
+    overflow:hidden;
+    width: 100%;
+    margin-top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.patinhos img{
+    animation: rotate-animation 10s infinite linear;
+    width: 120%;
+}
 .container {
   border: 3px solid #3c9ae2;
   position: relative;
@@ -109,9 +124,13 @@ body {
 <body>
     <img class="fig1" width="200px" src="./figurinha1.png"/>
     <img class="fig2" width="200px" src="./figurinha1.png"/>
+    <div class="patinhos">
+        <img  src="./patinhos.png"/>
+    </div>
     <div class="container-center">
         </div> 
         <div class="container" id="js-container">
+     
           <canvas class="canvas" id="js-canvas" width="300" height="311"></canvas>
           
           <form class="form" style="visibility: hidden;">
